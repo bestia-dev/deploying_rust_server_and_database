@@ -349,6 +349,37 @@ On my public IP address I attached the Nginx server. I use it as a reverse proxy
 It receives requests on the https port 443 and then route it internally to my web apps.  
 I have many web apps, each one is listening on a different port on localhost.  
 If the route starts with `/webpage_hit_counter/` then the Nginx will processes it and turn it into a `localhost:8011` request.
+
+```plantuml
+@startuml
+
+[browser1]
+[browser2]
+[browser3]
+
+component nginx_reverse_proxy{
+  [mem1->8081]
+  [mem2->8082]
+  [webpage_hit_counter->8011]
+}
+
+[webapp1_mem1]
+[webapp2_mem2]
+[webapp3_webpage_hit_counter]
+
+browser1 --> [mem1->8081] : /mem1/
+browser2 --> [mem2->8082] : /mem2/
+browser3 --> [webpage_hit_counter->8011] : /webpage_hit_counter/
+
+[mem1->8081] --> webapp1_mem1 : 8081
+[mem2->8082] --> webapp2_mem2 : 8082
+[webpage_hit_counter->8011] --> webapp3_webpage_hit_counter: 8011
+
+@enduml
+```
+
+![nginx uml](https://github.com/bestia-dev/deploying_rust_server_and_database/raw/main/images/nginx_uml.png)
+
 In the file `/etc/nginx/sites-available/default` I append this config lines:
 
 ```nginx
