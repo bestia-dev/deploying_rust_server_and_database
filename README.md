@@ -256,7 +256,7 @@ ssh -i ~/.ssh/ssh_certificate username@domain -v
 Run the bash script to create the image, run the pod with the containers:
 
 ```bash
-cd /var/www/transfer_folder
+cd /var/www/transfer_folder/webpage_hit_counter
 sh buildah_image_webpage_hit_counter.sh
 
 podman images
