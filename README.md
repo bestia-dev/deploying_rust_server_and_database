@@ -207,7 +207,7 @@ We can remove this container now. The data will persist on the system disk.
 ```bash
 podman ps
 
-podman rm postgresql
+podman rm -f postgresql
 ```
 
 ## Deploy the Rust web server
