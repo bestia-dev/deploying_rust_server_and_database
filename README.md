@@ -1,9 +1,9 @@
 # deploying_rust_server_and_database
 
 **06. Tutorial how to deploy Rust Web Server and Database (deploying_rust_server_and_database) (2022-08)**  
-***version: 2.0  date: 2022-08-12 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/deploying_rust_server_and_database)***  
+***version: 1.0  date: 2022-08-12 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/deploying_rust_server_and_database)***  
 
-[![Lines in md](https://img.shields.io/badge/Lines_in_markdown-318-green.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/)
+[![Lines in md](https://img.shields.io/badge/Lines_in_markdown-401-green.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/)
 [![Lines in bash scripts](https://img.shields.io/badge/Lines_in_bash_scripts-190-blue.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/blob/master/LICENSE)
