@@ -111,7 +111,8 @@ df -h
 ## Pull and run the Postgres container
 
 For now we will not deep dive into security. We will do that later.  
-We need a local directory to persist the data of the postgres server. It is not good to have the data inside the container. Then the data will be deleted if the container is removed. And that will happen eventually. Containers are ephemeral, they can be deleted at any time.
+We need a local directory to persist the data of the postgres server. It is not good to have the data inside the container. Then the data will be deleted if the container is removed. And that will happen eventually. Containers are ephemeral, they can be deleted at any time.  
+<https://techviewleo.com/how-to-run-postgresql-in-podman-container/>  
 
 ```bash
 mkdir -p /home/luciano_bestia/postgres_data/webpage_hit_counter_pod
@@ -176,7 +177,7 @@ rsync -e ssh -a --info=progress2 deploy/webpage_hit_counter_backup.tar luciano_b
 Now on the VM server I need to restore it:
 
 ```bash
-cd /var/www/transfer_folder/
+cd /var/www/transfer_folder/webpage_hit_counter
 pg_restore -C -v -d postgres -U admin -h localhost ./webpage_hit_counter_backup.tar
 
 #Try it:
