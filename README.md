@@ -243,7 +243,7 @@ postgres -> [folder postgres_data]: persistent volume
 @enduml
 ```
 
-[![pod uml](https://github.com/bestia-dev/deploying_rust_server_and_database/raw/main/images/pod_uml.png)]
+![pod uml](https://github.com/bestia-dev/deploying_rust_server_and_database/raw/main/images/pod_uml.png)
 
 We can now connect the terminal to my google VM bash over SSH:
 
