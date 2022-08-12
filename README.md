@@ -23,6 +23,11 @@ It works fine on my local [Rust development environment inside a docker containe
 Now I want to deploy it to the Cloud.  
 The code for deploy is part of the [webpage_hit_counter](https://github.com/bestia-dev/webpage_hit_counter) project.
 
+This project has also a youtube video tutorial. Watch it:
+<!-- markdownlint-disable MD033 -->
+[<img src="https://bestia.dev/youtube/deploying_rust_server_and_database.png" width="400px">](https://bestia.dev/youtube/deploying_rust_server_and_database.html)
+<!-- markdownlint-enable MD033 -->
+
 ## Google cloud VM free tier
 
 I have one VM Engine on GoogleCloud. It is really small, but unbeatably cheap - free tier.  
