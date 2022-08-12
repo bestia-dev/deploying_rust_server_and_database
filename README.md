@@ -245,15 +245,15 @@ postgres -> [folder postgres_data]: persistent volume
 
 ![pod uml](https://github.com/bestia-dev/deploying_rust_server_and_database/raw/main/images/pod_uml.png)
 
+## create podman image and pod
+
 We can now connect the terminal to my google VM bash over SSH:
 
 ```bash
 ssh -i ~/.ssh/ssh_certificate username@domain -v
 ```
 
-## create podman image and pod
-
-Run the bash script to create the image, run the pod with the containers:
+Run the bash script to create the image:
 
 ```bash
 cd /var/www/transfer_folder/webpage_hit_counter
