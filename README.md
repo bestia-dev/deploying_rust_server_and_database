@@ -28,6 +28,7 @@ The code for deploy is part of the [webpage_hit_counter](https://github.com/best
 I have one VM Engine on GoogleCloud. It is really small, but unbeatably cheap - free tier.  
 <https://cloud.google.com/free>  
 Services included in the free tier us-west1-b (Oregon):  
+
 - Compute engine E2-micro core (before discount 3.85€)  
     E2 shared-core machines have fractional vCPUs - 25% of one CPU core  
 - E2 ram (before discount 2.06€)  
@@ -220,6 +221,29 @@ I will create the container image with `buildah`. This is the podman utility for
 The binary executable file `target/release/webpage_hit_counter` and the dotenv file must be in the same directory where the bash script is run.  
 Note that the size of the binary can vary enormously. In build debug mode it is 135MB, in build release mode is 10MB. On that I use the `strip` command and it is now 5MB in size.  
 I upload files to my google VM using rsync and SSH. I coded this in the automation task `cargo auto publish_to_web` of the project `webpage_hit_counter`.
+
+```plantuml
+@startuml
+[psql]
+artifact "pod webpage_hit_counter_pod"{
+  frame "container webpage_hit_counter_cnt" {
+    [webapp webpage_hit_counter]
+  }
+  frame "container postgres"{
+    database postgres
+  }
+ [webapp webpage_hit_counter] -> postgres : 5432
+}
+cloud browser
+folder "folder postgres_data"
+
+postgres <-- psql :5432
+[webapp webpage_hit_counter] <-- browser : 8080:8011
+postgres -> [folder postgres_data]: persistent volume
+@enduml
+```
+
+[![pod uml](https://img.shields.io/badge/Lines_in_markdown-401-green.svg)]
 
 We can now connect the terminal to my google VM bash over SSH:
 

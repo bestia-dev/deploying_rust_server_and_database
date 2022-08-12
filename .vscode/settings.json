@@ -10,13 +10,16 @@
         "developmenttool",
         "dpkg",
         "endregion",
+        "enduml",
         "mkdir",
         "Nazdravlje",
         "Passw",
         "pgdg",
+        "plantuml",
         "Prost",
         "psql",
         "rustlang",
+        "startuml",
         "unbeatably",
         "zdravje"
     ]
