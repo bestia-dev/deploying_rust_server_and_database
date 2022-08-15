@@ -7,7 +7,7 @@
 [![Lines in bash scripts](https://img.shields.io/badge/Lines_in_bash_scripts-190-blue.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/blob/master/LICENSE)
-![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/529433632)
+![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/529433632.svg)
 
 Hashtags: #rustlang #buildtool #developmenttool #tutorial #docker #ssh  
 My projects on Github are more like a tutorial than a finished product: [bestia-dev tutorials](https://github.com/bestia-dev/tutorials_rust_wasm).
@@ -319,7 +319,7 @@ podman logs webpage_hit_counter_cnt
 The application listens to port 8080, but this port is already in use on my google VM. Containers can easily forward ports, so we can easily change the port to 8011.
 
 ```bash
-curl http://localhost:8011/webpage_hit_counter/get_svg_image/555555
+curl http://localhost:8011/webpage_hit_counter/get_svg_image/555555.svg
 ```
 
 It works!
@@ -343,7 +343,7 @@ sh buildah_image_webpage_hit_counter.sh
 #create and run the pod
 sh webpage_hit_counter_pod_create.sh
 #test
-curl http://localhost:8011/webpage_hit_counter/get_svg_image/555555
+curl http://localhost:8011/webpage_hit_counter/get_svg_image/555555.svg
 ```
 
 Done! It works!
@@ -404,7 +404,7 @@ Gracefully reload NGINX web server to read the modified config files:
 sudo systemctl reload nginx
 
 #Try it in browser or with curl:
-curl https://bestia.dev/webpage_hit_counter/get_svg_image/555555
+curl https://bestia.dev/webpage_hit_counter/get_svg_image/555555.svg
 ```
 
 It works like a charm!
@@ -422,7 +422,7 @@ The old img element were like this:
 My new counter will have a random id number:
 
 ```html
-<img src="https://bestia.dev/webpage_hit_counter/get_svg_image/546994039"/>
+<img src="https://bestia.dev/webpage_hit_counter/get_svg_image/546994039.svg"/>
 ```
 
 Let insert the data in the database:
@@ -430,11 +430,9 @@ Let insert the data in the database:
 ```bash
 psql -h localhost -p 5432 -U admin -W -d webpage_hit_counter
 
-insert into webpage(id, webpage)
-values(546994039, 'bestia.dev');
+insert into webpage(id, webpage) values(546994039, 'bestia.dev');
 
-insert into hit_counter(webpage_id, count)
-values(546994039, 273);
+insert into hit_counter(webpage_id, count) values(546994039, 273);
 ```
 
 Check the bestia.dev page. It shows the hit_counter.  
