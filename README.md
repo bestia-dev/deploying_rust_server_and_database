@@ -440,6 +440,14 @@ Refresh it and it is incremented.
 Fantastic!  
 I can now repeat this for all my other pages.
 
+## Check all my hit counts
+
+In psql I can now see the hit counters of all of my webpages.  
+
+```psql
+select W.webpage, H.count from hit_counter H join webpage W on W.id=H.webpage_id order by H.count desc;
+```
+
 ## cargo crev reviews and advisory
 
 We live in times of danger with [supply chain attacks](https://en.wikipedia.org/wiki/Supply_chain_attack).  
