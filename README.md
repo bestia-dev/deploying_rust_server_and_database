@@ -18,8 +18,8 @@ Welcome to bestia.dev !
 Learning Rust and Wasm programming and having fun.  
 I just love  programming !  
 
-In my [fifth tutorial](https://www.youtube.com/watch?v=-2Jzhp5GrtI&list=PLbXDHfG-c3U8pkyN1D7SwF3ItA3uTyoWW&index=5) of the series ["bestia.dev Tutorials for Rust programming language"](https://www.youtube.com/playlist?list=PLbXDHfG-c3U8pkyN1D7SwF3ItA3uTyoWW) I created a simple web application "webpage_hit_counter".  
-It works fine on my local [Rust development environment inside a docker container](https://www.youtube.com/watch?v=wr1f-TOcgMk&list=PLbXDHfG-c3U8pkyN1D7SwF3ItA3uTyoWW&index=2).  
+In my [fifth tutorial](https://bestia.dev/youtube/sort_text_international_rust_wasm_pwa.html) of the series ["bestia.dev Tutorials for Rust programming language"](https://www.youtube.com/playlist?list=PLbXDHfG-c3U8pkyN1D7SwF3ItA3uTyoWW) I created a simple web application "webpage_hit_counter".
+It works fine on my local [Rust development environment inside a docker container](https://bestia.dev/youtube/win10_wsl2_debian11.html).
 Now I want to deploy it to the Cloud.  
 The code for deploy is part of the [webpage_hit_counter](https://github.com/bestia-dev/webpage_hit_counter) project.
 
