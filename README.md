@@ -25,7 +25,7 @@ The code for deploy is part of the [webpage_hit_counter](https://github.com/best
 
 This project has also a youtube video tutorial. Watch it:
 <!-- markdownlint-disable MD033 -->
-[<img src="https://bestia.dev/youtube/deploying_rust_server_and_database.png" width="400px">](https://bestia.dev/youtube/deploying_rust_server_and_database.html)
+[<img src="https://bestia.dev/youtube/deploying_rust_server_and_database.jpg" width="400px">](https://bestia.dev/youtube/deploying_rust_server_and_database.html)
 <!-- markdownlint-enable MD033 -->
 
 ## Google cloud VM free tier
