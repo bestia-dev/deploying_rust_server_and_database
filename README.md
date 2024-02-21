@@ -3,12 +3,13 @@
 **06. Tutorial on how to deploy Rust Web Server and Database (deploying_rust_server_and_database) (2022-08)**  
 ***version: 1.0  date: 2022-08-12 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/deploying_rust_server_and_database)***  
 
-![status](https://img.shields.io/badge/tutorial-yellow) 
-[![Lines in md](https://img.shields.io/badge/Lines_in_markdown-401-green.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/)
-[![Lines in bash scripts](https://img.shields.io/badge/Lines_in_bash_scripts-190-blue.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/)
+ ![tutorial](https://img.shields.io/badge/tutorial-yellow)
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/blob/master/LICENSE)
-![Hits](https://bestia.dev/webpage_hit_counter/get_svg_image/529433632.svg)
+ [![Lines in md](https://img.shields.io/badge/Lines_in_markdown-401-green.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/)
+ [![Lines in bash scripts](https://img.shields.io/badge/Lines_in_bash_scripts-190-blue.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/)
+
+ [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/blob/master/LICENSE)
+ ![deploying_rust_server_and_database](https://bestia.dev/webpage_hit_counter/get_svg_image/529433632.svg)
 
 Hashtags: #rustlang #buildtool #developmenttool #tutorial #docker #ssh  
 My projects on Github are more like a tutorial than a finished product: [bestia-dev tutorials](https://github.com/bestia-dev/tutorials_rust_wasm).
