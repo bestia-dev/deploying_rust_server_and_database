@@ -1,3 +1,5 @@
+[//]: # (auto_md_to_doc_comments segment start A)
+
 # deploying_rust_server_and_database
 
 **06. Tutorial on how to deploy Rust Web Server and Database (deploying_rust_server_and_database) (2022-08)**  
@@ -463,3 +465,5 @@ So I can drink a free beer for your health :-)
 [//github.com/bestia-dev](https://github.com/bestia-dev)  
 [//bestiadev.substack.com](https://bestiadev.substack.com)  
 [//youtube.com/@bestia-dev-tutorials](https://youtube.com/@bestia-dev-tutorials)  
+
+[//]: # (auto_md_to_doc_comments segment end A)
