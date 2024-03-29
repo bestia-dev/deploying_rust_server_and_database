@@ -13,8 +13,15 @@
         "latex",
         "plaintext"
     ],
+    "files.associations": {
+        "LICENSE": "plain text"
+    },
     "rust-analyzer.showUnlinkedFileNotification": false,
     "cSpell.words": [
+        "zcvf",
+        "thiserror",
+        "struct",
+        "CRUSTDE",
         "Alla",
         "autoremove",
         "bestia",
