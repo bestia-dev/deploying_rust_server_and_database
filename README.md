@@ -5,7 +5,10 @@
 **06. Tutorial on how to deploy Rust Web Server and Database (deploying_rust_server_and_database) (2022-08)**  
 ***version: 1.0  date: 2022-08-12 author: [bestia.dev](https://bestia.dev) repository: [GitHub](https://github.com/bestia-dev/deploying_rust_server_and_database)***  
 
+ ![maintained](https://img.shields.io/badge/maintained-green)
+ ![ready_for_use](https://img.shields.io/badge/ready_for_use-green)
  ![tutorial](https://img.shields.io/badge/tutorial-yellow)
+ ![youtube](https://img.shields.io/badge/youtube-yellow)
 
  [![Lines in md](https://img.shields.io/badge/Lines_in_markdown-401-green.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/)
  [![Lines in bash scripts](https://img.shields.io/badge/Lines_in_bash_scripts-190-blue.svg)](https://github.com/bestia-dev/deploying_rust_server_and_database/)
